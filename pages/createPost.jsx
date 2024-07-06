@@ -10,7 +10,7 @@ export default function CreatePost() {
   const [values, setValues] = useState([]);
   const handleChange = (event) => {
     const { value } = event.target;
-    const newValues = value.split(/[, ]+/); // Split by commas or spaces
+    const newValues = value.split(/[, ]+/);
     setValues(newValues);
   };
 
