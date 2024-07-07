@@ -15,7 +15,7 @@ export default function PostLayout({ posts }) {
         setUsers(user);
       })
       .catch((error) => {
-        toast.error("Error al agarrar los usuarios");
+        toast.error("Error al cargar los usuarios");
       });
   }, []);
 
