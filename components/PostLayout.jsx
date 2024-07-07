@@ -15,17 +15,17 @@ export default function PostLayout({ posts }) {
         setUsers(user);
       })
       .catch((error) => {
-        toast.error("Error al agarrar los usars");
+        toast.error("Error al agarrar los usuarios");
       });
   }, []);
 
   function handleLatest() {
-    // posts.map((post) => console.log(post.createdAt));
+    posts.map((post) => console.log(post.createdAt));
 
     const latest = [...posts];
     latest.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
     console.log(latest);
-    // return latestPost;
+    return latestPost;
   }
 
   return (
